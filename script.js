@@ -418,3 +418,21 @@ function renderTicket(data) {
 
   qrContainer.innerHTML = '<img id="staticQrCode" src="assets/qrcode.png" alt="Parking booking QR code">';
 }
+// Release Slot Button
+const resetSlotBtn = document.getElementById("resetSlotBtn");
+
+if (resetSlotBtn) {
+  resetSlotBtn.addEventListener("click", () => {
+    slotRef.set({
+      status: "free",
+      bookedBy: "",
+      vehicleNumber: "",
+      startTime: "",
+      endTime: "",
+      price: "",
+      bookingId: ""
+    });
+
+    alert("Slot Released Successfully!");
+  });
+}

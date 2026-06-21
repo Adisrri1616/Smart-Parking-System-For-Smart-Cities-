@@ -1,17 +1,14 @@
-// Firebase web configuration for the browser CDN scripts used in the HTML files.
-// This project uses Firebase v8 compat scripts:
-// firebase-app.js and firebase-database.js
+// Firebase web configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCoD5W95FFD_6mepYfWms9tv_Nay209-Uo",
-  authDomain: "smart-park-db-94758.firebaseapp.com",
-  databaseURL: "https://smart-park-db-94758-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "smart-park-db-94758",
-  storageBucket: "smart-park-db-94758.firebasestorage.app",
-  messagingSenderId: "864593092756",
-  appId: "1:864593092756:web:35aff0c6a2669ddbb5d481"
+  apiKey: "AIzaSyAUYu_O2GTBc7PSNEO6DM1LtmNq0Kp1LrU",
+  authDomain: "smart-parking-system-79ea9.firebaseapp.com",
+  databaseURL: "https://smart-parking-system-79ea9-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "smart-parking-system-79ea9",
+  storageBucket: "smart-parking-system-79ea9.firebasestorage.app",
+  messagingSenderId: "64061292409",
+  appId: "1:64061292409:web:f5f4518e2c6393fb7e79a8"
 };
 
-// Initialize Firebase only once. This avoids duplicate-app errors during reloads.
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
 }
